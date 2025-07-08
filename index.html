@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>JavaScript Loop Tasks</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 p-0 text-gray-800">
+
+    <div class="flex flex-wrap gap-4 justify-center">
+
+      <!-- Task 1 -->
+      <div
+        class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+        <h2 class="text-lg font-bold">1. Fruits List</h2>
+        <button onclick="showFruits()"
+          class="bg-blue-500 text-white px-4 py-1 rounded hover:bg-blue-600">Show
+          Fruits</button>
+        <div id="fruits" class="space-y-1"></div>
+      </div>
+
+      <!-- Task 2 -->
+      <div
+        class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+        <h2 class="text-lg font-bold">2. Colors in Paragraph</h2>
+        <button onclick="showColors()"
+          class="bg-green-500 text-white px-4 py-1 rounded hover:bg-green-600">Show
+          Colors</button>
+        <p id="output" class="text-blue-600 font-medium"></p>
+      </div>
+
+      <!-- Task 3 -->
+      <div
+        class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+        <h2 class="text-lg font-bold">3. Numbers from 1 to 10</h2>
+        <button onclick="showNumbers1to10()"
+          class="bg-indigo-500 text-white px-4 py-1 rounded hover:bg-indigo-600">Show
+          Numbers</button>
+        <div id="numbers1to10" class="text-green-600"></div>
+      </div>
+
+      <!-- Task 4 -->
+      <div
+        class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+        <h2 class="text-lg font-bold">4. Numbers from 5 to 1</h2>
+        <button onclick="showNumbers5to1()"
+          class="bg-red-500 text-white px-4 py-1 rounded hover:bg-red-600">Show
+          Numbers</button>
+        <div id="numbers5to1" class="text-red-600"></div>
+      </div>
+
+      <!-- Task 5 -->
+      <div
+        class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+        <h2 class="text-lg font-bold">5. Names List</h2>
+        <button onclick="showNames()"
+          class="bg-purple-500 text-white px-4 py-1 rounded hover:bg-purple-600">Show
+          Names</button>
+        <div id="names" class="text-purple-600"></div>
+      </div>
+
+      <!-- Task 6 -->
+      <div
+        class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+        <h2 class="text-lg font-bold">6. Status</h2>
+        <button onclick="showStatus()"
+          class="bg-yellow-500 text-white px-4 py-1 rounded hover:bg-yellow-600">Show
+          Status</button>
+        <p id="status" class="text-yellow-600 font-bold"></p>
+      </div>
+
+      <!-- Task 7 -->
+      <div
+        class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+        <h2 class="text-lg font-bold">7. Sum of Numbers</h2>
+        <button onclick="showSum()"
+          class="bg-indigo-600 text-white px-4 py-1 rounded hover:bg-indigo-700">Calculate
+          Sum</button>
+        <p id="sum" class="text-indigo-600 font-semibold"></p>
+      </div>
+
+      <!-- Task 8 -->
+      <div
+        class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+        <h2 class="text-lg font-bold">8. Cities List</h2>
+        <button onclick="showCities()"
+          class="bg-pink-500 text-white px-4 py-1 rounded hover:bg-pink-600">Show
+          Cities</button>
+        <div id="cities" class="text-pink-600"></div>
+      </div>
+
+      <!-- Task 9 -->
+      <div
+        class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+        <h2 class="text-lg font-bold">9. Even Numbers 1-20</h2>
+        <button onclick="showEvenNumbers()"
+          class="bg-gray-700 text-white px-4 py-1 rounded hover:bg-gray-800">Show
+          Evens</button>
+        <div id="evenNumbers" class="text-gray-700"></div>
+      </div>
+
+      <!-- Task 10 -->
+      <div
+        class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+        <h2 class="text-lg font-bold">10. Largest Number</h2>
+        <button onclick="showMaxNumber()"
+          class="bg-lime-500 text-white px-4 py-1 rounded hover:bg-lime-600">Show
+          Max</button>
+        <p id="max" class="text-lime-600 font-semibold"></p>
+      </div>
+
+      <!-- Task 11 -->
+      <div
+        class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+        <h2 class="text-lg font-bold">11. Task Complete Message</h2>
+        <button onclick="taskComplete()"
+          class="bg-emerald-500 text-white px-4 py-1 rounded hover:bg-emerald-600">Mark
+          Complete</button>
+        <div id="result" class="text-emerald-700"></div>
+      </div>
+
+      <!-- Task 12 -->
+      <div
+        class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+        <h2 class="text-lg font-bold">12. Average Temperature</h2>
+        <button onclick="averageTemperature()"
+          class="bg-orange-500 text-white px-4 py-1 rounded hover:bg-orange-600">Show
+          Average</button>
+        <p id="averageTemp" class="text-orange-700"></p>
+      </div>
+
+      <!-- Task 13 -->
+      <div
+        class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+        <h2 class="text-lg font-bold">13. Total Sum (1 to 100)</h2>
+        <button onclick="sum1to100()"
+          class="bg-sky-500 text-white px-4 py-1 rounded hover:bg-sky-600">Calculate
+          Total</button>
+        <p id="totalSum" class="text-sky-700"></p>
+      </div>
+
+      <!-- Task 14 -->
+      <div
+        class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+        <h2 class="text-lg font-bold">14. Animal List</h2>
+        <button onclick="showAnimals()"
+          class="bg-fuchsia-500 text-white px-4 py-1 rounded hover:bg-fuchsia-600">Show
+          Animals</button>
+        <p id="animals" class="text-fuchsia-700"></p>
+      </div>
+
+      <!-- Task 15 -->
+      <div
+        class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+        <h2 class="text-lg font-bold">15. Heading Update</h2>
+        <button onclick="updateHeading()"
+          class="bg-teal-500 text-white px-4 py-1 rounded hover:bg-teal-600">Update
+          Title</button>
+        <h3 id="title" class="text-xl text-teal-700">Old Title</h3>
+      </div>
+
+      <!-- Task 16 -->
+      <div
+        class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+        <h2 class="text-lg font-bold">16. Numbers Divisible by 5 (Console)</h2>
+        <button onclick="divisibleByFive()"
+          class="bg-amber-500 text-white px-4 py-1 rounded hover:bg-amber-600">Log
+          to Console</button>
+      </div>
+
+      <!-- Task 17 -->
+      <div
+        class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+        <h2 class="text-lg font-bold">17. High Scores</h2>
+        <button onclick="countHighScores()"
+          class="bg-pink-500 text-white px-4 py-1 rounded hover:bg-pink-600">Count
+          Scores</button>
+        <div id="highScores" class="text-pink-700"></div>
+      </div>
+
+      <!-- Task 18 -->
+      <div
+        class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+        <h2 class="text-lg font-bold">18. Message Update</h2>
+        <button onclick="updateMessage()"
+          class="bg-zinc-500 text-white px-4 py-1 rounded hover:bg-zinc-600">Update
+          Message</button>
+        <p id="message" class="text-zinc-700"></p>
+      </div>
+
+      <!-- Task 19 -->
+      <div
+        class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+        <h2 class="text-lg font-bold">19. Subjects List</h2>
+        <button onclick="showSubjects()"
+          class="bg-lime-500 text-white px-4 py-1 rounded hover:bg-lime-600">Show
+          Subjects</button>
+        <p id="subjectsList" class="text-lime-700"></p>
+      </div>
+
+      <!-- Task 20 -->
+      <div
+        class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+        <h2 class="text-lg font-bold">20. Numbers 10 to 1 & Sum of Array</h2>
+        <button onclick="countDownAndSum()"
+          class="bg-rose-500 text-white px-4 py-1 rounded hover:bg-rose-600">Run
+          Task</button>
+        <div id="countdown" class="text-rose-700"></div>
+        <p id="arraySum" class="text-rose-800 font-semibold"></p>
+      </div>
+
+      <!-- Task 21 -->
+      <div
+        class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+        <h2 class="text-lg font-bold">21. Largest Number</h2>
+        <button onclick="findLargest()"
+          class="bg-blue-500 text-white px-4 py-1 rounded">Find Largest</button>
+        <div id="task21" class="text-blue-700"></div>
+      </div>
+
+      <!-- Task 22 -->
+      <div
+        class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+        <h2 class="text-lg font-bold">22. Count Even Numbers</h2>
+        <button onclick="countEvens()"
+          class="bg-green-500 text-white px-4 py-1 rounded">Count Evens</button>
+        <div id="task22" class="text-green-700"></div>
+      </div>
+
+      <!-- Task 23 -->
+      <div
+        class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+        <h2 class="text-lg font-bold">23. Average of Numbers</h2>
+        <button onclick="calculateAverage()"
+          class="bg-indigo-500 text-white px-4 py-1 rounded">Get
+          Average</button>
+        <div id="task23" class="text-indigo-700"></div>
+      </div>
+
+      <!-- Task 24 -->
+      <div
+        class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+        <h2 class="text-lg font-bold">24. Multiply by 3</h2>
+        <button onclick="multiplyByThree()"
+          class="bg-yellow-500 text-white px-4 py-1 rounded">Multiply</button>
+        <div id="task24" class="text-yellow-700"></div>
+      </div>
+
+      <!-- Task 25 -->
+      <div
+        class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+        <h2 class="text-lg font-bold">25. Count > 4</h2>
+        <button onclick="countGreaterThanFour()"
+          class="bg-purple-500 text-white px-4 py-1 rounded">Count</button>
+        <div id="task25" class="text-purple-700"></div>
+      </div>
+
+      <!-- Task 26 -->
+      <div
+        class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+        <h2 class="text-lg font-bold">26. Sum Divisible by 5</h2>
+        <button onclick="sumDivisibleBy5()"
+          class="bg-teal-500 text-white px-4 py-1 rounded">Add</button>
+        <div id="task26" class="text-teal-700"></div>
+      </div>
+
+      <!-- Task 27 -->
+      <div
+        class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+        <h2 class="text-lg font-bold">27. Check 25 in Array</h2>
+        <button onclick="checkTwentyFive()"
+          class="bg-rose-500 text-white px-4 py-1 rounded">Check</button>
+        <div id="task27" class="text-rose-700"></div>
+      </div>
+
+      <!-- Task 28 -->
+      <div
+        class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+        <h2 class="text-lg font-bold">28. Sum Corresponding Elements</h2>
+        <button onclick="sumArrays()"
+          class="bg-lime-500 text-white px-4 py-1 rounded">Sum</button>
+        <div id="task28" class="text-lime-700"></div>
+      </div>
+
+      <!-- Task 29 -->
+      <div
+        class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+        <h2 class="text-lg font-bold">29. Second Largest</h2>
+        <button onclick="secondLargest()"
+          class="bg-orange-500 text-white px-4 py-1 rounded">Find</button>
+        <div id="task29" class="text-orange-700"></div>
+      </div>
+
+        <!-- Task 30 -->
+        <div
+          class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+          <h2 class="text-lg font-bold">30. Reverse Array</h2>
+          <button onclick="reverseArray()"
+            class="bg-gray-500 text-white px-4 py-1 rounded">Reverse</button>
+          <div id="task30" class="text-gray-700"></div>
+        </div>
+
+        <!-- Task 31 -->
+        <div
+          class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+          <h2 class="text-lg font-bold">31. Prime Numbers 1–50</h2>
+          <button onclick="printPrimes()"
+            class="bg-cyan-500 text-white px-4 py-1 rounded">Primes</button>
+          <div id="task31" class="text-cyan-700"></div>
+        </div>
+
+        <!-- Task 32 -->
+        <div
+          class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+          <h2 class="text-lg font-bold">32. Difference Max - Min</h2>
+          <button onclick="diffMaxMin()"
+            class="bg-amber-500 text-white px-4 py-1 rounded">Calculate</button>
+          <div id="task32" class="text-amber-700"></div>
+        </div>
+
+        <!-- Task 33 -->
+        <div
+          class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+          <h2 class="text-lg font-bold">33. Count Negatives</h2>
+          <button onclick="countNegatives()"
+            class="bg-red-500 text-white px-4 py-1 rounded">Count</button>
+          <div id="task33" class="text-red-700"></div>
+        </div>
+
+        <!-- Task 34 -->
+        <div
+          class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+          <h2 class="text-lg font-bold">34. Filter Odd Numbers</h2>
+          <button onclick="filterOdds()"
+            class="bg-violet-500 text-white px-4 py-1 rounded">Filter</button>
+          <div id="task34" class="text-violet-700"></div>
+        </div>
+
+        <!-- Task 35 -->
+        <div
+          class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+          <h2 class="text-lg font-bold">35. Remove Zeros</h2>
+          <button onclick="removeZeros()"
+            class="bg-blue-600 text-white px-4 py-1 rounded">Remove</button>
+          <div id="task35" class="text-blue-800"></div>
+        </div>
+
+        <!-- Task 36 -->
+        <div
+          class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+          <h2 class="text-lg font-bold">36. Swap First and Last</h2>
+          <button onclick="swapFirstLast()"
+            class="bg-green-600 text-white px-4 py-1 rounded">Swap</button>
+          <div id="task36" class="text-green-800"></div>
+        </div>
+
+        <!-- Task 37 -->
+        <div
+          class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+          <h2 class="text-lg font-bold">37. Are All Even?</h2>
+          <button onclick="checkAllEven()"
+            class="bg-indigo-600 text-white px-4 py-1 rounded">Check</button>
+          <div id="task37" class="text-indigo-800"></div>
+        </div>
+
+        <!-- Task 38 -->
+        <div
+          class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+          <h2 class="text-lg font-bold">38. Count ≥ Average</h2>
+          <button onclick="countAboveAverage()"
+            class="bg-yellow-600 text-white px-4 py-1 rounded">Count</button>
+          <div id="task38" class="text-yellow-800"></div>
+        </div>
+
+        <!-- Task 39 -->
+        <div
+          class="bg-white p-4 rounded shadow space-y-2 w-full sm:w-[48%] lg:w-[32%]">
+          <h2 class="text-lg font-bold">39. All Elements Equal?</h2>
+          <button onclick="checkAllEqual()"
+            class="bg-purple-600 text-white px-4 py-1 rounded">Check</button>
+          <div id="task39" class="text-purple-800"></div>
+        </div>
+
+      </div>
+
+      <script src="app.js"></script>
+
+    </body>
+  </html>
